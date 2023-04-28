@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <style>
+
+        *{
+            margin: 0;
+        }
+        .main{
+            background: linear-gradient(to bottom left, rgb(28, 239, 239), rgb(76, 139, 232), rgb(141, 7, 141));
+            filter: brightness(0.9);
+            height: 100vh;
+            position: relative;
+        }
+        .form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            padding: 50px 80px;
+            /* box-shadow: 0 0 10px 5px gray; */
+            background-color: white;
+        }
+        h1{
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        input {
+            border: none;
+            outline: none;
+            border-bottom: 2px solid black;
+            margin-bottom: 25px;
+            margin-top: 5px;
+        }
+
+        input[type="submit"] {
+            border: none;
+            margin-top: 40px;
+            padding: 10px 20px;
+            font-size: 24px;
+            border-radius: 10px;
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s linear;
+        }
+        input[type="submit"]:hover{
+            background-color: rgba(0, 0, 0, 0.1);
+            color: blue;
+        }
+        .forgot{
+            margin-top: -20px;
+            font-size: 14px;
+            float: right;
+            margin-left: 70px;
+            cursor: pointer;
+        }
+        .forgot:hover{
+            color: gray;
+        }
+        .back{
+            text-decoration: none;
+            cursor: pointer;
+            margin-top: 100px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main"></div>
+    <div class="form">
+        <h1>Sign Up</h1>
+        <label for="fname">Name</label>
+        <input type="text" name="fname" id="fname">
+        
+        <label for="name">username</label>
+        <input type="text" name="name" id="name">
+
+        <label for="pass">password</label>
+        <input type="password" name="pass" id="pass">
+        
+        <label for="cpass">confirm password</label>
+        <input type="password" name="cpass" id="cpass">
+
+        <input type="submit" value="Sign up">
+
+        <a href="./loginsignupbtn.html" class="back">Go Back</a>
+    </div>
+</body>
+
+</html>
