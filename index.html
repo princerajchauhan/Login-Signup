@@ -1,57 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Signup</title>
-    <style>
-        .parent{
-            height: 100vh;
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            align-items: center;
-        }
-        .btn{
-            font-size: 30px;
-            border: 3px solid gray;
-            border-radius: 10px;
-            padding: 15px 25px;
-            font-weight: bold;
-            background-color: blue;
-            color: white;
-            transition: all 0.5s linear;
-            cursor: pointer;
-        }
-        .btn:hover{
-            background-color: rgba(0, 0, 0, 0.2);
-            color: black;
-            box-shadow: 0 0 25px 10px rgb(150, 147, 147);
-        }
-
-        @media screen and (max-width: 900px) {
-            .btn{
-                background-color: red;
-            }
-            .parent{
-                flex-direction: column;
-            }
-        }
-
-        @media screen and (max-width: 600px) {
-            .btn{
-                background-color: green;
-            }
-            .parent{
-                flex-direction: column;
-            }
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
+   
 </head>
+
 <body>
+    <nav>
+        <h1>Welcome To The World Of Prince</h1>
+        <hr size="2px" color="green">
+        <p>Phone : +91 7827636992 Time : 10 A.M To 6 P.M </p>
+    </nav>
     <div class="parent">
+        <div class="prince">
+            <h2 data-text="Prince...">Prince...</h2>
+        </div>
         <div>
             <a href="./login.html"><button class="btn">Login</button></a>
         </div>
@@ -60,4 +28,5 @@
         </div>
     </div>
 </body>
+
 </html>
