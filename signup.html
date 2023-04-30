@@ -73,13 +73,47 @@
             margin-top: 100px;
             margin: auto;
         }
+        .signstyle{
+            display: flex;
+            justify-content: center;
+            /* text-align: center; */
+        }
+        h1{
+            position: relative;
+            font-size: 35px;
+            color: white;
+            /* -webkit-text-stroke: 1px black; */
+        }
+        h1::before{
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            color: black;
+            /* -webkit-text-stroke: 0.1vw rgb(225, 222, 222); */
+            border-right: 3px solid green;
+            overflow: hidden;
+            animation: animate 3s linear infinite;
+        }
+        @keyframes animate {
+            0%{
+                width: 0;
+            }
+            70%{
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="main"></div>
     <div class="form">
-        <h1>Sign Up</h1>
+        <div class="signstyle">
+            <h1 data-text="SignUp...">SignUp...</h1>
+        </div>
         <label for="fname">Name</label>
         <input type="text" name="fname" id="fname">
         

@@ -72,6 +72,32 @@
             margin-top: 100px;
             margin: auto;
         }
+        .logstyle{
+            display: flex;
+            justify-content: center;
+        }
+        h1{
+            font-size: 35px;
+            color: white;
+            position: relative;
+        }
+        h1::before{
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            color: black;
+            border-right: 3px solid red;
+            overflow: hidden;
+            animation: animate 3s linear infinite;
+        }
+        @keyframes animate {
+            70%{
+                width: 100%
+            }
+        }
     </style>
 </head>
 
@@ -80,7 +106,9 @@
 
     </div>
     <div class="form">
-        <h1>Login</h1>
+        <div class="logstyle">
+            <h1 data-text="Login...">Login...</h1>
+        </div>
         <label for="name">username</label>
         <input type="text" name="name" id="name">
 
